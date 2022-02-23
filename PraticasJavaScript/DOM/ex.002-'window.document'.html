@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 2</title>
+    <style>
+        body{
+            background: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>teste JavaScript</h1>
+    <p>você é foda</p>
+    <h3>teste</h3>
+    <p style="color: rgb(141, 16, 141);">jaja din din volta</p>
+    <div>Clique aqui</div> 
+    <div  name="msg">Clique aqui</div> 
+    <div  class="msgI">Clique aqui</div> 
+    <div  class="msg">Clique aqui</div> 
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        document.writeln(p1.innerHTML + '</br>')
+        window.document.writeln('Está escrito assim: ' + p1.innerHTML)
+       /* var d = window.document.getElementById('msg')
+        d.style.background = 'white'
+        d.innerText = 'Estou aguardando...'*/
+         var d = window.document.getElementsByName('msg')[0]
+         d.innerText = 'Olá!'
+         var C = window.document.getElementsByClassName('msgI')[0]
+         C.innerText = 'OLÁ DE NOVO'
+
+        var s = window.document.querySelector('div.msg')
+        s.style.background = 'white'
+ </script>
+</body>
+</html>

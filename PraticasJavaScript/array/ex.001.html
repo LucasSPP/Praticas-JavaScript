@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        let num = [1,5,11]
+        console.log(`Nosso vetor é ${num}`)
+        num[2] = 2
+        console.log(`Nosso vetor é ${num}`)
+        num.push(9)
+        console.log(`Nosso vetor é ${num}`)
+        //num.length //Diz a quantiadde de elementos do vetor
+        console.log(`O vetor tem ${num.length} posições`)
+        num.sort()
+        console.log(`O vetor tem ${num} como elementos`)
+        console.log(`O vetor tem o valor de elemento ${num[0]}`)
+        for (let index = 0; index < num.length; index++) {
+            //const element = num[index];
+            console.log(`O vetor no indice ${index} tem o valor de elemento ${num[index]}`)
+
+        }
+    </script>
+    <script>
+        let num = [1,9,0]
+        num.sort()
+        for (let c in num) {
+            
+
+            console.log(`A posição do Vetor é = ${c} tem valor de ${num[c]}`)
+            let pos = num.indexOf(9)
+            console.log(`Ovalor 9 está na posição ${pos}`)
+        }
+    </script>
+
+</body>
+</html>

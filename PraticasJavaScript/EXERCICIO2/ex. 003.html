@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('Qual seu nome?')
+        document.writeln(`Olá, ${nome} ! Seu nome tem ${nome.length} letras </br>`)
+        document.writeln(`Olá, ${nome.toUpperCase()} ! Seu nome tem ${nome.length} letras mauisculas </br>`)
+        document.writeln(`Olá, ${nome.toLowerCase()} ! Seu nome tem ${nome.length} letras minusculas </br>`)
+        var n1 = 1545.5
+        document.writeln(n1.toFixed(4)+'</br>') //indica a quantidade de casas decimais.
+        document.writeln(n1.toFixed(4).replace('.',',')+'</br>') //indica a quantidade de casas decimais, além de, trocar o ponto por virgula.
+        document.writeln(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})) //Adiciona o simbolo monetário do pais indicado no currency.
+        
+</script>
+</body>
+</html>

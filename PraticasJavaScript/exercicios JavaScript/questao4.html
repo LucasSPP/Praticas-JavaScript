@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculo</title>
+
+
+    <script type="text/javascript">
+        function calcularValores(){
+        var s1 = document.getElementById("s1").value;
+        var s2 = document.getElementById("s2").value;
+        var media = (parseInt(s1) + parseInt(s2))/2;
+        
+        alert("Sua media é: " + media);
+        
+    }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Cálculo</legend>
+        <label>Valor 1:</label>
+        <input id="s1" type="text"/>
+        <label>Valor 2: </label>
+        <input id="s2" type="text"/>
+        <button id="media" onclick="calcularValores()">calcular</button>
+    </fieldset>
+    </script>
+
+</body>
+</html>

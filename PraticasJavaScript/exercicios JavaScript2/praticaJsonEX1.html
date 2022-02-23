@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+  <h2> Access a JavaScript OBJECT</h2>
+  <P id="nome"></P>
+  <P id="ano"></P>
+  <script>
+
+    const myOBJ = {name:" Jonh ", age: 30 , city: " New York "};
+    myOBJ["name"] = "Gilbert";
+    document.getElementById("nome").innerHTML =myOBJ.name;
+    document.getElementById("ano").innerHTML =myOBJ.age;
+  </script>
+</body>  
+</html>

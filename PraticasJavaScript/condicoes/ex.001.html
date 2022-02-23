@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade por hora <input type="number" name="in.vel" id="in.vel"> Km/h
+    <input type="button" value="verificar" onclick="aplicar()">
+    <div id="div.vel">...</div>
+    <script>
+        function aplicar(){
+            var txtvel = window.document.getElementById('in.vel')
+            var div_vel = window.document.getElementById('div.vel')
+            var vel = (txtvel.value)
+
+            div_vel.innerHTML = `Sua velocidade é de ${vel} `
+            if(vel > 80){
+                div_vel.innerHTML = (`Ultrapassou os limites de velocidade permitida, atingiu ${vel} Km/h e terá multa de 100 reais e 4 pontos na carteira`)
+            }else{
+                div_vel.innerHTML = (`Sua velocidade é de ${vel} Km/h e está dentro do permitido`)
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pegar valor digitado utilizando JavaScript. Dica 29</h1>
+            <input type="text" id=valor>
+            <input type="submit" onclick="capturar()" value="escreva algo"> 
+            <p id="valorDigitado"></p>
+            <script>
+                    var capturando = "";
+                    function capturar () {
+                        capturando = document.getElementById('valor').value;
+                        document.getElementById('valorDigitado').innerHTML = capturando;
+                    }
+
+            </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições aninhadas</title>
+</head>
+<body>
+    <h1>Voto</h1>
+    <input type="number" name="txtnum" id="txtnum">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="div.idade" >...</div>
+</body>
+<script>
+    function verificar() {
+        var in_voto = document.getElementById('txtnum')
+        var div_voto = document.getElementById('div.idade')
+        var voto = (in_voto.value)   
+        div_voto.innerHTML = (`Você tem ${voto} anos de idade `)
+        if (voto < 16) {
+            div_voto.innerHTML = (`Você tem ${voto} anos de idade e não pode votar`)
+        }else if(voto < 18 || voto > 65){
+            div_voto.innerHTML = (`Você tem ${voto} anos de idade e tem o voto opicional`)
+
+        }else{
+            div_voto.innerHTML = (`Você tem ${voto} anos de idade e tem o voto obrigatorio`)
+        }
+    }
+</script>
+
+</html>

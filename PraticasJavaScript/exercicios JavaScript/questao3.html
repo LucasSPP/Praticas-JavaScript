@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            
+            <input type="text" id=valor1>
+            
+            <input type="submit" onclick="capturar1()" value="escreva algo"> 
+            <input type="text" id=valor2>
+            <input type="submit" onclick="capturar2()" value="escreva algo">
+            <script>
+
+                    var capturando1 = "";
+                    function capturar1 () {
+                        capturando1 = document.getElementById('valor1').value;
+                        document.getElementById('valorDigitado1').innerHTML = capturando1;
+                    }
+            </script> 
+            <br>  
+            <script> 
+                    capturando2 = "";   
+                    function capturar2 () {
+                        capturando1 = document.getElementById('valor2').value;
+                        document.getElementById('valorDigitado2').innerHTML = capturando2;
+                    }
+            </script> 
+</body>
+</html>

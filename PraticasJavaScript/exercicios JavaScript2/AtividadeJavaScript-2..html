@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade JavaScript-2</title>
+</head>
+
+<body>
+    <h1>Dados Pessoais: </h1>
+    <h2 id="name"></h2>
+    <script>
+
+        let text = '{"DadosPessoa": [' +
+            '{"PessoaId":" Pessoa 1º = Nome: Lucas Pires,","cidade":" Cidade: Lauro de Freitas","emailId":", E-mail: lucas@gmail.com"},' +
+            '{"PessoaId":" Pessoa 2º = Nome: Marina Pires,","cidade":" Cidade: Simões Filho","emailId":", E-mail: marina@gmail.com"},' +
+            '{"PessoaId":" Pessoa 3º = Nome: Jade Pires,","cidade":" Cidade: Salvador","emailId":", E-mail: jade@gmail.com"}]}';
+
+
+        const objt = JSON.parse(text);
+
+
+        document.getElementById("name").innerHTML +=
+            objt.DadosPessoa[0].PessoaId
+            + objt.DadosPessoa[0].cidade
+            + objt.DadosPessoa[0].emailId + "</br>" + "</br>";
+
+        document.getElementById("name").innerHTML +=
+            objt.DadosPessoa[1].PessoaId
+            + objt.DadosPessoa[1].cidade
+            + objt.DadosPessoa[1].emailId + "</br>" + "</br>";
+
+        document.getElementById("name").innerHTML +=
+            objt.DadosPessoa[2].PessoaId
+            + objt.DadosPessoa[2].cidade
+            + objt.DadosPessoa[2].emailId + "</br>" + "</br>";
+
+    </script>
+</body>
+
+</html>

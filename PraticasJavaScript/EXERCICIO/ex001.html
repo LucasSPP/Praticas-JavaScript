@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario</title>
+</head>
+
+<body>
+    <h1>Comprimento</h1>
+    <p>Digite que horas são</p>
+    <input type="text" name="txthoras" id="txthoras">
+    <input type="button" value="Seguir" onclick="seguir()">
+    <div id="div.horas">...</div>
+    <script>
+        function seguir() {
+            var in_horas = document.getElementById('txthoras')
+            var div_horas = document.getElementById('div.horas')
+            var horas = (in_horas.value)
+            //var agora = new Date()
+            if (horas < 12) {
+                div_horas.innerHTML = (`Bom dia, são ${horas} horas`)
+            } else if (horas >= 12 && horas <= 17) {
+                div_horas.innerHTML = (`Bom tarde, são ${horas} horas`)
+            } else {
+                div_horas.innerHTML = (`Bom noite, são ${horas} horas`)
+            }
+        }
+    </script>
+</body>
+
+</html>
